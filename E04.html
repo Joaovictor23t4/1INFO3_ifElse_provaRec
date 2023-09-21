@@ -10,8 +10,15 @@
     */
 
     //ENTRADA
-
-
+    const pesoCarga = Number(prompt(`Qual o peso da carga?`));
+    let valor = Number(prompt(`Quanto será cobrado para realizar o transporte?`));
+    let resposta = 0;
+    if (pesoCarga > 40) {
+        resposta = valor + (valor * ((pesoCarga - 40) * 0.05));
+    } else {
+        resposta = valor
+    }
+    document.write(`O custo do transporte foi de: ${resposta.toFixed(2)} e o custo por tonelada foi de: ${(resposta / pesoCarga).toFixed(2)}`);
     //PROCESSAMENTO
 
 

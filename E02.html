@@ -10,14 +10,17 @@
     */
 
     //ENTRADA
+    const horas = Number(prompt(`Informe quantas horas você ficou com a bicicleta:`));
+    let custo = 0;
+    if (horas === 1) {
+        custo = 9.9
+    } else if (horas <= 3) {
+        custo = horas * 8.9;
+    } else {
+        custo = horas * 6.9;
+    }
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
-
+    document.write(`O preço a ser pago será de: R$${custo.toFixed(2)}`);
     /*
     Para testar:
     Horas de Aluguel: 1

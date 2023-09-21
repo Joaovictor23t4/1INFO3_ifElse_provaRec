@@ -8,14 +8,17 @@
     - Para turno N (Noturno), o sistema apresentará: Estuda das 19:00 até 22:00.
     */
 
-    //ENTRADA
+    const turno = prompt(`Informe o turno em que você estuda: M - Matutino; I - Integral; N - Noturno`).toUpperCase();
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+    if (turno === "M") {
+        document.write(`Estuda das 08:00 até 12:00`);
+    } else if (turno === "I") {
+        document.write(`Estuda das 08:00 até 17:00`);
+    } else if (turno === "N") {
+        document.write(`Estuda das 19:00 até 22:00`);
+    } else {
+        document.write(`Turno incorreto!`);
+    }
 
     /*
     Para testar:

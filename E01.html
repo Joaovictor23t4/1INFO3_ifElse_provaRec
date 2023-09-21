@@ -7,13 +7,14 @@
     Baseado nas notas informadas, apresente mensagem indicando se o aluno possui chances de passar ou não na disciplina.
     */
 
-    //ENTRADA
+    const notaPrimeiro = Number(prompt(`Informe a sua nota de programação no primeiro trimestre:`));
+    const notaSegundo = Number(prompt(`Informe a sua nota de programação no segundo trimestre:`));
 
-
-    //PROCESSAMENTO
-
-
-    //SAÍDA
+    if (notaPrimeiro + notaPrimeiro >= 8) {
+        document.write(`Possui chances de ser aprovado!`);
+    } else {
+        document.write(`Está reprovado!`);
+    }
 
 
     /*
